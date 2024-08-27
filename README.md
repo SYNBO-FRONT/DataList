@@ -1,79 +1,80 @@
-## 入驻项目信息提交
-Please submit the project using a feature branch, add a new folder in the "projects" folder, and use the project name as the naming convention, example: **synboProtocol**, and make sure the folder name is unique.     
+## Data List In Stock
 
-You can then add project basic information files, project details files, AMA files, and terms files to this folder.     
 
-**1、 Project basic information file**     
-***Naming convention***: Use camel case naming, name it after the project name, and end with .json.       
-     Example: **synboProtocol.json**      
-***File content***: Contains the document fields below, please read carefully.       
+Please submit the project using GitHub's "pull requests" and create a new project folder within the "projects" folder. The folder's name should match the project name exactly, for example, "synboProtocol," and ensure the name is unique.
 
-**2. Project details file**     
-***Naming convention***: The file name starts with info_, plus the project name, and ends with .md.     
-     Example: **info_synboProtocol.md**    
-***File content***: A detailed project overview, project details information provided through visual and text documents. Contents may include but are not limited to:     
-1、Project overview: Detailed description of the background, goals, and features of the project.     
-2、Team details: Introduce team members and their backgrounds.   
-3、Token economy: Describe the issuance mechanism, allocation plan, and purpose of the token.    
-4、Roadmap: The future development plan and timeline of the project.   
-5、Historical fundraising information: including information such as financing rounds, amounts, and investors.    
+Then, you will need to add the project basic information file, project details file, AMA proposal file, and qualified terms file (if applicable) to this folder.
 
-**3. AMA file**   
-***Naming convention***: The file name starts with ama_, plus the project name, and ends with .md.   
-     Example: **ama_synboProtocol.md**   
-***File content***: Interact with users in the form of questions and answers   
+1. **Basic Information**
+   - Naming convention: Use camel case, name it after the project name, and the file extension should be `.json`.
+   - Example: synboProtocol.json
+   - File content: Please follow the document fields and submit according to the format.
+   - Required
 
-**4. Terms file**   
-***Naming convention***: The file name starts with terms_, plus the project name, and ends with .md.   
-     Example: **terms_synboProtocol.md**  
-***File content***: Describe the project's terms of use and policies in detail, including but not limited to:   
-1、Terms of Service: Services provided by the project and their conditions of use.   
-2、Privacy Policy: How user data is collected, used, and protected.   
-3、Disclaimer: The project party's statement of responsibility for users' use of project services.   
+2. **Details File**
+   - Naming convention: The file name should start with `info_`, followed by the project name, and the file extension should be `.md`.
+   - Example: info_synboProtocol.md
+   - File content: A detailed project overview provided through visual and text documents. The content may include but is not limited to:
+     1. **Project Overview**: A detailed description of the project's background, goals, and features.
+     2. **Team Information**: Introduce team members and their backgrounds.
+     3. **Token Economy**: Describe the token issuance mechanism, allocation plan, and purpose.
+     4. **Roadmap**: The future development plan and timeline of the project.
+     5. **Historical Fundraising Information**: Include information on financing rounds, amounts, and investors.
 
-After submission, it will be reviewed by a dedicated team member and merged into the main branch. Project information will only be visible on the merged website.    
+3. **AMA Proposal File**
+   - Naming convention: The file name should start with `ama_`, followed by the project name, and the file extension should be `.md`.
+   - Example: ama_synboProtocol.md
+   - File content: Present details on the current fundraising environment, needs, and usage targets in a Q&A format.
 
-**The following is the fields included in the project basic information file, please read carefully:** 
+4. **Terms File**
+   - Naming convention: The file name should start with `terms_`, followed by the project name, and the file extension should be `.md`.
+   - Example: terms_synboProtocol.md
+   - File content: If your project has undergone any compliance reviews, audits, etc., it can be presented here, especially for RWA-related projects. (Optional)
 
-"IDs by automatically generated": {    
-"Data-ID":"Automatically generated, only one for a project.",    
-"IPFS-ID[Data-ID]":"Automatically generated, only one for a project on IPFS",    
-"Target-IDs[IPFS-ID][chain-ids]":"Automatically generated, one ID for one chain",    
-"Contractor[Target-ID][n]":"Automatically generated, one chain can have multiple Contractors"    
-},   
+The documents support Markdown syntax, so please ensure proper formatting. Once merged, the information will be displayed in the Data List module.
 
-"project": {    
-"title": "Required, project name, such as SYNBO protocol",    
-"description one sentence": "Required, this is a sentence of 50 characters or less to introduce a project",    
-"bannerImage": "Optional, banner image link, 1440 *400",    
-"tags": "Required, such as: DEFI, DAO, LAYER2..., industry standard identifiers for easy classification and browsing",       
-"logo": "Required, project logo image link, 120 *120",     
-"chains": "Required, the ecosystem it is in, such as: "ETH, BNB"     
-},    
 
-"token[]": [    
-{    
-"name":"Optional, token name, such as SYNBO",    
-"symbol":"Optional, token symbol, such as SYT",    
-“contractAddress”:“Optional, if it is erc20, then display contractAddress”,    
-“totalSupply”:“Optional, format: 100,000.000”,    
-“valuation”:“Optional, the valuation of the last round of financing, format: 100,000.000”,    
-“circulatingSupply”:“Optional, format: 100,000.000”,    
-"whereChain":"Optional, which chain is the token on? ”,    
-“tokenType”:“Optional, ERC-20 or Native_TOKEN”,    
-“description”:“Optional, a description of the role, utility or life cycle of the current token in the project. "    
-},    
-{    
-"...":""     
-}    
-],    
-“project-social”: {    
-“website”: "",    
-“twitter”: "",    
-“telegram”: "",   
-“github”: "",    
-“medium”: "",    
-“discord”: "",    
-“email”: ""    
-}
+
+**eference Instructions for the Required JSON File Format and Content Submission， please read carefully:** 
+
+- **TargetID**: Automatically generated
+- **Name**: Accurate project name
+- **Logo**: In SVG file format, provided as an array if there are multiple logos
+- **Profile**: Brief description within 250 characters
+- **Ecology-icon**: Ecology icons, provided as an array of ecology targets, typically public chain icons
+- **Tags**: Tags, provided as an array of the project’s ecological labels
+
+### Fundraising History
+  - **Historical Fundraising Amount**: 1.0M
+  - **Historical Investors**: SYNBO protocol, ** capital
+  - **Current Fundraising Plan**: Pre-A
+
+### Token Lists
+  - **Token Name 1**
+    - **Where**: The blockchain where the asset is located
+    - **Token Address**: ERC20 address
+    - **Token Type**: Asset type, such as ERC20, 721, NATIVE, etc.
+    - **Info**: Description of usage, etc.
+  - **Token Name 2** (if multiple tokens)
+    - **Where**: The blockchain where the asset is located
+    - **Token Address**: ERC20 address
+    - **Token Type**: Asset type, such as ERC20, 721, NATIVE, etc.
+    - **Info**: Description of usage, etc.
+
+### Community Information
+  - Website
+  - Docs
+  - Github
+  - Twitter
+  - Discord
+  - Telegram
+  - Medium
+  - Email
+  - More.
+
+
+
+
+If you have any questions, please feel free to contact labs@synbo.io for assistance.
+
 
