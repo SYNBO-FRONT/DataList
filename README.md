@@ -35,7 +35,7 @@ The documents support Markdown syntax, so please ensure proper formatting. Once 
 
 
 
-**eference Instructions for the Required JSON File Format and Content Submission， please read carefully:** 
+** _Please feel free to eference Instructions for the Required JSON File Format and Content Submission， please read carefully:_ ** 
 
 - **TargetID**: Automatically generated
 - **Name**: Accurate project name
