@@ -37,9 +37,10 @@ The documents support Markdown syntax, so please ensure proper formatting. Once 
 <br>
 <br>
 
+<br>
+<br>
 
-**Basic Information .json Format**
-**_Please feel free to eference Instructions for the Required JSON File Format and Content Submission， please read carefully:_** 
+**_Please feel free to eference Instructions for the Required .JSON Format and Content Submission， please read carefully:_** 
 
 - **TargetID**: Automatically generated
 - **Name**: Accurate project name
