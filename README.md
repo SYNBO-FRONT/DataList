@@ -34,8 +34,12 @@ Then, you will need to add the project basic information file, project details f
 The documents support Markdown syntax, so please ensure proper formatting. Once merged, the information will be displayed in the Data List module.
 
 
+<br>
+<br>
 
-** _Please feel free to eference Instructions for the Required JSON File Format and Content Submission， please read carefully:_ ** 
+
+**Basic Information .json Format**
+**_Please feel free to eference Instructions for the Required JSON File Format and Content Submission， please read carefully:_** 
 
 - **TargetID**: Automatically generated
 - **Name**: Accurate project name
